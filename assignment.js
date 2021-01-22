@@ -1,18 +1,20 @@
 // https://github.com/robinsrk/programming-hero-assignment-3
-function kilometerToMeter(kilo) {
-	if (kilo > 0) {
-		return kilo * 1000;
+function kilometerToMeter(kilometer) {
+	if (kilometer > 0 ) {
+		let meter = kilometer * 1000;
+		return meter;
 	}
 	else {
-		return "Distance can't be 0 or negative value";
+		return "Unit must be number and greater than 0";
 	}
 }
 function budgetCalculator(watch, phone, laptop) {
 	if (watch > 0 && phone > 0 && laptop > 0) {
-		return (watch * 50) + (phone * 100) + (laptop * 500);
+		let totalCost = (watch * 50) + (phone * 100) + (laptop * 500);
+		return totalCost;
 	}
 	else {
-		return "Product unit can't be less than 1";
+		return "Unit must be number and greater than 0";
 	}
 }
 function hotelCost(night) {
@@ -33,7 +35,7 @@ function hotelCost(night) {
 		return cost;
 	}
 	else {
-		return "Day unit can't be less than 1"
+		return "Unit must be number and greater than 0"
 	}
 }
 function megaFriend(friendsName) {
